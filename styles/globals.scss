@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto+Mono:wght@400;600;700&family=Space+Mono:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #fcfcfc;
+  --white: #fff;
+  --black: #232323;
+
+  --gray-50: #f7f8fa;
+  --gray-100: #e6e8eb;
+  --gray-200: #afb2b1;
+  --gray-500: #808080;
+  --gray-800: #494d4b;
+
+  --teal: #2c7a7b;
+  --red: #c53030;
+  --green: #2f855a;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--background);
+}
+
+section {
+  margin: auto;
+  width: 80vw;
+  padding: 0 1.5rem;
+
+  @media only screen and (min-width: 375px) and (max-width: 812px) {
+    width: 100%;
+  }
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1rem Roboto Mono, monospace;
+  color: var(--black);
+}
+
+p,
+li {
+  font: 400 1rem Roboto Mono, monospace;
+  color: var(--black);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  font-family: Poppins, sans-serif;
+  color: var(--black);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}

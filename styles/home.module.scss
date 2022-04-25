@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 80vw;
+  @media only screen and (min-width: 375px) and (max-width: 812px) {
+    width: 100%;
+  }
+}
+
+.userCreation {
+  margin-top: 2.5rem;
+
+  form {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    input {
+      border-radius: 10px;
+      padding: 10px;
+      border: 2px solid black;
+
+      &:focus {
+        outline-color: var(--teal);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    button {
+      background-color: var(--green);
+      color: var(--white);
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      transition: filter(0.2s);
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+
+  p {
+    &.error {
+      color: var(--red);
+    }
+
+    &.success {
+      color: var(--green);
+    }
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.25rem;
+  }
+}
