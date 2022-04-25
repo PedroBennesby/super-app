@@ -25,6 +25,7 @@
       border: 2px solid black;
 
       &:focus {
+        border-color: var(--teal);
         outline-color: var(--teal);
         transition: all 0.3s ease-in-out;
       }

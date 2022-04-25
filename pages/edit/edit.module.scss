@@ -29,6 +29,7 @@
 
       &:focus {
         outline-color: var(--teal);
+        border-color: var(--teal);
         transition: all 0.3s ease-in-out;
       }
     }
